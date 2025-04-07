@@ -5,6 +5,7 @@ installCursor() {
         ICON_PATH="/opt/cursor.png"
         DESKTOP_ENTRY_PATH="/usr/share/applications/cursor.desktop"
         wget -c -o Cursor.AppImage https://downloads.cursor.com/production/1d623c4cc1d3bb6e0fe4f1d5434b47b958b05876/linux/x64/Cursor-0.48.7-x86_64.AppImage
+        chmod +x Cursor.AppImage
         echo "Copy Cursor AppImage..."
         sudo mv Cursor.AppImage $APPIMAGE_PATH
         sudo chmod +x $APPIMAGE_PATH
